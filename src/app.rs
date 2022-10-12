@@ -68,21 +68,14 @@ impl Component for App {
         let parse_html = parse_text(&self.state.text);
         let div: Element = document().create_element("div").unwrap();
         div.set_inner_html(&parse_html);
-        div.set_class_name("markdown-body");
+        div.set_class_name("preview");
         let node: Node = div.into();
         let preview = VNode::VRef(node);
-
-        let on_text_input = {
-            Callback::from(move |e: InputData| {
-                Msg::Change(e.value);
-            })
-        };
-
         html! {
             <>
             <header id="header">
             {"MarkDown Editor v0.0.1"}
-        </header>
+            </header>
         <article id="article">
             <div class="l-column">
                 <h2 class="section-title">{"Markdown"}</h2>
