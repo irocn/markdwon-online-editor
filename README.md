@@ -1,11 +1,8 @@
-Markdown Preview App powered by Rust / WebAssembly + Yew
+## Compile
+1. yarn install
+2. yarn add -D css-loader@5.2.6 sass sass-loader@10.1.1 style-loader@2.0.0
+3. yarn build
+4. yarn run start:dev
 
-## Demo
-
-https://yew-markdown-preview.netlify.com/
-
-![Yew Markdown Preview](https://i.imgur.com/5bbN9dF.png)
-
-## Articles
-
-- [Yew ではじめる Rust / WebAssembly 開発 - Qiita](https://qiita.com/pvcresin/items/614cbd363af82e11c204)
+## Live edit 
+http://127.0.0.1:8088/
